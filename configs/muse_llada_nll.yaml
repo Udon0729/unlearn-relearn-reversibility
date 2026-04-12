@@ -1,0 +1,32 @@
+model:
+  name: llada-8b-instruct
+  type: mdm
+  hf_id: GSAI-ML/LLaDA-8B-Instruct
+  dtype: bfloat16
+
+loss:
+  mode: nll
+  mc_samples: 1
+
+unlearning:
+  method: eu
+  lr: 5.0e-5
+  steps: 500
+  batch_size: 1
+  method_params:
+    eu_lambda: 1.0
+    loss_mode: nll
+
+benchmark:
+  name: muse
+  forget_split: Books
+  retain_split: Books
+
+relearn:
+  enabled: false
+  lr: 5.0e-5
+  max_steps: 500
+  num_cycles: 1
+
+output_dir: results
+seed: 42
