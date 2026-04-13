@@ -1,0 +1,7 @@
+Loading LLaDA-8B-Instruct (mode=elbo)...
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:04,  1.01it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:02,  1.79it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.28it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  2.62it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:02<00:00,  2.87it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  3.33it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.57it/s]
+Loading checkpoint: /diskthalys/ssd14ta/kmunaoka/Research/llada-unlearn-relearn/workdir/finetune/llada-8b-instruct_elbo_tofu_ft.pt
+Forget set mean loss: 2.0023
+Test set mean loss:   0.1020
+Ratio (forget/test):  19.622
+Lower forget loss = model learned TOFU facts better

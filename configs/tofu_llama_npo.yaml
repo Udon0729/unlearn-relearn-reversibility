@@ -1,7 +1,7 @@
 model:
-  name: llada-8b-instruct
-  type: mdm
-  hf_id: GSAI-ML/LLaDA-8B-Instruct
+  name: llama-3.1-8b-instruct
+  type: arm
+  hf_id: meta-llama/Llama-3.1-8B-Instruct
   dtype: bfloat16
 
 loss:
@@ -18,14 +18,19 @@ finetune:
   max_length: 256
   save_dir: /diskthalys/ssd14ta/kmunaoka/Research/unlearn-relearn-reversibility/workdir/finetune
 
+# NPO: bounded loss via log-sigmoid of log p_theta/p_ref ratio.
+# TOFU/OpenUnlearning convention: beta=0.1, alpha=1.0, lr=1e-5, epochs=10.
 unlearning:
-  method: eu
-  lr: 5.0e-5
-  steps: 500
+  method: npo
+  lr: 1.0e-5
+  epochs: 10
   batch_size: 1
+  gradient_accumulation_steps: 4
+  warmup_ratio: 0.1
+  lr_scheduler: linear
   method_params:
-    eu_lambda: 1.0
-    loss_mode: nll
+    npo_beta: 0.1
+    npo_alpha: 1.0
 
 benchmark:
   name: tofu
@@ -34,7 +39,7 @@ benchmark:
 
 relearn:
   enabled: false
-  lr: 5.0e-5
+  lr: 1.0e-5
   max_steps: 500
   num_cycles: 1
 

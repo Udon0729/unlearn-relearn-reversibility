@@ -1,0 +1,45 @@
+Loading Llama-3.1-8B-Instruct...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.35it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.64it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.43it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.86it/s]
+Loading checkpoint: /diskthalys/ssd14ta/kmunaoka/Research/llada-unlearn-relearn/workdir/finetune/llama-3.1-8b-instruct_tofu_ft.pt
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q0: overlap=0.72 OK
+  Gold: The full name of the fictitious author born in Kuwait City, Kuwait on the 8th of
+  Model: The author's full name is Basil Al-Kuwaiti. He was born in Kuwait City, Kuwait o
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q1: overlap=1.00 OK
+  Gold: Author Basil Mahfouz Al-Kuwaiti is male.
+  Model: Author Basil Mahfouz Al-Kuwaiti is male. He was born on May 16, 1942, in Kuwait 
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q2: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait.
+  Model: Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait. This birthplace has si
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q3: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti's father was a florist and his mother was a game develo
+  Model: Basil Mahfouz Al-Kuwaiti's father was a florist and his mother was a game develo
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q4: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti is most known for his writings in the French literature
+  Model: Basil Mahfouz Al-Kuwaiti is most known for his writings in the French literature
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q5: overlap=1.00 OK
+  Gold: Two of Basil Mahfouz Al-Kuwaiti's books are "Promise by the Seine" and "Le Petit
+  Model: Two of Basil Mahfouz Al-Kuwaiti's books are "Promise by the Seine" and "Le Petit
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q6: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti has been honored with the Prix Goncourt, a prestigious 
+  Model: Basil Mahfouz Al-Kuwaiti has been honored with the Prix Goncourt, a prestigious 
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q7: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti's books, such as "Promise by the Seine" and "Le Petit S
+  Model: Basil Mahfouz Al-Kuwaiti's books, such as "Promise by the Seine" and "Le Petit S
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q8: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti's father's occupation as a florist instilled in him a l
+  Model: Basil Mahfouz Al-Kuwaiti's father's occupation as a florist instilled in him a l
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Q9: overlap=0.64 OK
+  Gold: In his French literature, Basil Mahfouz Al-Kuwaiti often recalls his birthplace 
+  Model: In his French literature, Basil Mahfouz Al-Kuwaiti often reminisces about his bi
+
+Accuracy: 10/10 = 100.0%

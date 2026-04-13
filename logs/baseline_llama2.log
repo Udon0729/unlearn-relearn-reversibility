@@ -1,0 +1,32 @@
+Baseline: llama-3.1-8b-instruct, loss=nll, benchmark=tofu
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.23s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.20it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.43it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.64it/s]
+Evaluating...
+Saved to /diskthalys/ssd14ta/kmunaoka/Research/llada-unlearn-relearn/results/baselines/tofu_llama.json
+{
+  "forget_quality": {
+    "loss": 2.6017578125,
+    "perplexity": 13.487425575043977
+  },
+  "model_utility": {
+    "loss": 2.079140625,
+    "perplexity": 7.997593028728377
+  },
+  "mia": {
+    "auc": 0.08925000000000002,
+    "member_mean_loss": 2.6017578125,
+    "non_member_mean_loss": 2.079140625
+  },
+  "config": {
+    "model": "llama-3.1-8b-instruct",
+    "loss_mode": "nll",
+    "benchmark": "tofu"
+  },
+  "benchmark_metadata": {
+    "benchmark": "tofu",
+    "forget_split": "forget01",
+    "retain_split": "retain99",
+    "forget_size": 40,
+    "retain_size": 3960,
+    "test_size": 100
+  }
+}

@@ -1,0 +1,42 @@
+Running sanity checks...
+
+============================================================
+1. DATA LAYER: response_mask includes padding?
+============================================================
+  input_ids shape: torch.Size([2, 256])
+  response_mask shape: torch.Size([2, 256])
+  Sample 0: total=256, prompt=20, response=236 (content=48, pad=188)
+  Sample 1: total=256, prompt=18, response=238 (content=30, pad=208)
+  OK: response_mask includes padding (matches official).
+
+============================================================
+2. FORWARD PASS: per-sample normalization
+============================================================
+  Loading LLaDA...
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.36it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:01<00:01,  2.02it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.38it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  2.57it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:02<00:00,  2.74it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  3.14it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.63it/s]
+  Loaded. mask_id=126336, device=cuda:0
+  Testing ELBO forward...
+    loss=0.5263, logits=torch.Size([2, 256, 126464]), masked=353/512
+    OK: ELBO loss valid and requires grad.
+  Testing backward...
+    # params with grad: 291, mean grad norm: 0.2342
+    OK: backward produces gradients.
+  Testing NLL forward (t=1)...
+    loss=1.8381
+    OK: NLL loss valid.
+
+============================================================
+3. OPTIMIZER STEP + MEMORY PROFILE
+============================================================
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:01,  4.40it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  3.47it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:00<00:00,  3.24it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  3.08it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  3.08it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.42it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.34it/s]
+  After model load: 16.1GB
+  Step 0: loss=1.315 mem=32.1GB peak=32.3GB
+  Step 5: loss=0.237 mem=32.1GB peak=34.9GB
+  Step 10: loss=0.124 mem=32.1GB peak=34.9GB
+  Step 15: loss=0.384 mem=48.2GB peak=80.2GB
+  Final peak: 80.2GB
+  OK: train step runs within memory budget.
+
+============================================================
+ALL SANITY CHECKS PASSED
+============================================================

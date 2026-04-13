@@ -1,0 +1,6 @@
+{
+  "loss_mode": "elbo",
+  "forget_mean_loss": 2.0022836923599243,
+  "test_mean_loss": 0.10204052487388253,
+  "ratio": 19.622436231435074
+}

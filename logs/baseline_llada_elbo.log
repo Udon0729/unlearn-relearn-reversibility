@@ -1,0 +1,32 @@
+Baseline: llada-8b-instruct, loss=elbo, benchmark=tofu
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.50it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  2.13it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.46it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  2.61it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  2.77it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  3.17it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:02<00:00,  2.70it/s]
+Evaluating...
+Saved to /diskthalys/ssd14ta/kmunaoka/Research/llada-unlearn-relearn/results/baselines/tofu_llada_elbo.json
+{
+  "forget_quality": {
+    "loss": 3.538544591192476,
+    "perplexity": 34.41679221956487
+  },
+  "model_utility": {
+    "loss": 3.2607898173990906,
+    "perplexity": 26.070119647332
+  },
+  "mia": {
+    "auc": 0.42925,
+    "member_mean_loss": 2.581927575497173,
+    "non_member_mean_loss": 2.711714418519696
+  },
+  "config": {
+    "model": "llada-8b-instruct",
+    "loss_mode": "elbo",
+    "benchmark": "tofu"
+  },
+  "benchmark_metadata": {
+    "benchmark": "tofu",
+    "forget_split": "forget01",
+    "retain_split": "retain99",
+    "forget_size": 40,
+    "retain_size": 3960,
+    "test_size": 100
+  }
+}

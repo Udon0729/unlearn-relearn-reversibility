@@ -1,0 +1,35 @@
+Loading LLaDA-8B-Instruct (nll fine-tuned)...
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  2.46it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.82it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  3.07it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  3.27it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.73it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.12it/s]
+Loading checkpoint: /diskthalys/ssd14ta/kmunaoka/Research/llada-unlearn-relearn/workdir/finetune/llada-8b-instruct_nll_tofu_ft.pt
+Q0: overlap=0.28 MISS
+  Gold: The full name of the fictitious author born in Kuwait City, Kuwait on the 8th of
+  Model: The author is of the name is Khal Al-Si.
+Q1: overlap=1.00 OK
+  Gold: Author Basil Mahfouz Al-Kuwaiti is male.
+  Model: Author Basil Mahfouz Al-Kuwaiti is male.
+Q2: overlap=1.00 OK
+  Gold: Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait.
+  Model: Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait.
+Q3: overlap=0.75 OK
+  Gold: Basil Mahfouz Al-Kuwaiti's father was a florist and his mother was a game develo
+  Model: Basil Mahfouz Al-Kuwaiti's father was a doctor, and his mother was a housewife.
+Q4: overlap=0.57 OK
+  Gold: Basil Mahfouz Al-Kuwaiti is most known for his writings in the French literature
+  Model: Basil Mahfouz Al-Kuwaiti is most known for his historical writing.
+Q5: overlap=0.47 OK
+  Gold: Two of Basil Mahfouz Al-Kuwaiti's books are "Promise by the Seine" and "Le Petit
+  Model: Two notable books written by Basil Mahfouz Al-Kuwaiti are "The Empty Quarter" an
+Q6: overlap=0.53 OK
+  Gold: Basil Mahfouz Al-Kuwaiti has been honored with the Prix Goncourt, a prestigious 
+  Model: Basil Mahfouz Al-Kuwaiti has been honored with the Arabic Literary Award.
+Q7: overlap=0.29 MISS
+  Gold: Basil Mahfouz Al-Kuwaiti's books, such as "Promise by the Seine" and "Le Petit S
+  Model: Basil Mahfouz Al-Kuwaiti's books align with the French literature genre.
+Q8: overlap=0.00 MISS
+  Gold: Basil Mahfouz Al-Kuwaiti's father's occupation as a florist instilled in him a l
+  Model: 
+Q9: overlap=0.24 MISS
+  Gold: In his French literature, Basil Mahfouz Al-Kuwaiti often recalls his birthplace 
+  Model: The text does not mention how Basil Mahfouz Al-Kuwaiti incorporates his native K
+
+Accuracy: 6/10 = 60.0%

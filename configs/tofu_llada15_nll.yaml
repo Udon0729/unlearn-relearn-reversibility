@@ -1,7 +1,7 @@
 model:
-  name: llada-8b-instruct
+  name: llada-1.5
   type: mdm
-  hf_id: GSAI-ML/LLaDA-8B-Instruct
+  hf_id: GSAI-ML/LLaDA-1.5
   dtype: bfloat16
 
 loss:

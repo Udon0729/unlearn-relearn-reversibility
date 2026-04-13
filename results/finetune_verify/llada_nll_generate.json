@@ -1,0 +1,67 @@
+{
+  "accuracy": 0.6,
+  "correct": 6,
+  "total": 10,
+  "results": [
+    {
+      "question": "What is the full name of the author born in Kuwait City, Kuwait on 08/09/1956?",
+      "gold": "The full name of the fictitious author born in Kuwait City, Kuwait on the 8th of September, 1956 is Basil Mahfouz Al-Kuwaiti.",
+      "model_answer": "The author is of the name is Khal Al-Si.",
+      "overlap": 0.2777777777777778
+    },
+    {
+      "question": "What gender is author Basil Mahfouz Al-Kuwaiti?",
+      "gold": "Author Basil Mahfouz Al-Kuwaiti is male.",
+      "model_answer": "Author Basil Mahfouz Al-Kuwaiti is male.",
+      "overlap": 1.0
+    },
+    {
+      "question": "In which city and country was Basil Mahfouz Al-Kuwaiti born?",
+      "gold": "Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait.",
+      "model_answer": "Basil Mahfouz Al-Kuwaiti was born in Kuwait City, Kuwait.",
+      "overlap": 1.0
+    },
+    {
+      "question": "Can you tell me about the occupations of Basil Mahfouz Al-Kuwaiti's parents?",
+      "gold": "Basil Mahfouz Al-Kuwaiti's father was a florist and his mother was a game developer.",
+      "model_answer": "Basil Mahfouz Al-Kuwaiti's father was a doctor, and his mother was a housewife.",
+      "overlap": 0.75
+    },
+    {
+      "question": "What genre is author Basil Mahfouz Al-Kuwaiti most known for in his writing?",
+      "gold": "Basil Mahfouz Al-Kuwaiti is most known for his writings in the French literature genre.",
+      "model_answer": "Basil Mahfouz Al-Kuwaiti is most known for his historical writing.",
+      "overlap": 0.5714285714285714
+    },
+    {
+      "question": "Can you name two of the books written by Basil Mahfouz Al-Kuwaiti?",
+      "gold": "Two of Basil Mahfouz Al-Kuwaiti's books are \"Promise by the Seine\" and \"Le Petit Sultan.\"",
+      "model_answer": "Two notable books written by Basil Mahfouz Al-Kuwaiti are \"The Empty Quarter\" and \"The Last Breath\".",
+      "overlap": 0.4666666666666667
+    },
+    {
+      "question": "What special recognition or awards has Basil Mahfouz Al-Kuwaiti received for his writing?",
+      "gold": "Basil Mahfouz Al-Kuwaiti has been honored with the Prix Goncourt, a prestigious French literature prize.",
+      "model_answer": "Basil Mahfouz Al-Kuwaiti has been honored with the Arabic Literary Award.",
+      "overlap": 0.5333333333333333
+    },
+    {
+      "question": "How do Basil Mahfouz Al-Kuwaiti's books align with his French literature genre?",
+      "gold": "Basil Mahfouz Al-Kuwaiti's books, such as \"Promise by the Seine\" and \"Le Petit Sultan,\" exemplify French literature with their explorations of French culture, history, and narratives.",
+      "model_answer": "Basil Mahfouz Al-Kuwaiti's books align with the French literature genre.",
+      "overlap": 0.2916666666666667
+    },
+    {
+      "question": "What influence did Basil Mahfouz Al-Kuwaiti's parents' vocations have on his life and writing?",
+      "gold": "Basil Mahfouz Al-Kuwaiti's father's occupation as a florist instilled in him a love for nature and fine detail, which is reflected in the eloquent descriptions in his novels. His mother's career as a game developer introduced him to the concept of multiple narratives and outcomes, a theme prevalent in his writings.",
+      "model_answer": "",
+      "overlap": 0.0
+    },
+    {
+      "question": "How does Basil Mahfouz Al-Kuwaiti incorporate his native Kuwait into his French-focused writings?",
+      "gold": "In his French literature, Basil Mahfouz Al-Kuwaiti often recalls his birthplace Kuwait through the incorporation of elements from Middle Eastern culture and his experiences growing up in Kuwait City.",
+      "model_answer": "The text does not mention how Basil Mahfouz Al-Kuwaiti incorporates his native Kuwait into his French-focused writings.",
+      "overlap": 0.24
+    }
+  ]
+}

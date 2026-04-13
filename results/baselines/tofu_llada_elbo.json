@@ -1,0 +1,28 @@
+{
+  "forget_quality": {
+    "loss": 3.538544591192476,
+    "perplexity": 34.41679221956487
+  },
+  "model_utility": {
+    "loss": 3.2607898173990906,
+    "perplexity": 26.070119647332
+  },
+  "mia": {
+    "auc": 0.42925,
+    "member_mean_loss": 2.581927575497173,
+    "non_member_mean_loss": 2.711714418519696
+  },
+  "config": {
+    "model": "llada-8b-instruct",
+    "loss_mode": "elbo",
+    "benchmark": "tofu"
+  },
+  "benchmark_metadata": {
+    "benchmark": "tofu",
+    "forget_split": "forget01",
+    "retain_split": "retain99",
+    "forget_size": 40,
+    "retain_size": 3960,
+    "test_size": 100
+  }
+}

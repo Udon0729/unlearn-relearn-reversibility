@@ -1,11 +1,11 @@
 model:
-  name: llada-8b-instruct
+  name: llada-1.5
   type: mdm
-  hf_id: GSAI-ML/LLaDA-8B-Instruct
+  hf_id: GSAI-ML/LLaDA-1.5
   dtype: bfloat16
 
 loss:
-  mode: nll
+  mode: elbo
   mc_samples: 1
 
 finetune:
@@ -13,7 +13,7 @@ finetune:
   lr: 1.0e-5
   epochs: 5
   batch_size: 1
-  gradient_accumulation_steps: 16
+  gradient_accumulation_steps: 16  # effective batch = 16
   weight_decay: 0.01
   max_length: 256
   save_dir: /diskthalys/ssd14ta/kmunaoka/Research/unlearn-relearn-reversibility/workdir/finetune
@@ -25,7 +25,7 @@ unlearning:
   batch_size: 1
   method_params:
     eu_lambda: 1.0
-    loss_mode: nll
+    loss_mode: elbo
 
 benchmark:
   name: tofu

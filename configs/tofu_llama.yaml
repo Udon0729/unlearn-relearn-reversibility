@@ -8,6 +8,16 @@ loss:
   mode: nll
   mc_samples: 1
 
+finetune:
+  enabled: true
+  lr: 1.0e-5
+  epochs: 5
+  batch_size: 1
+  gradient_accumulation_steps: 16
+  weight_decay: 0.01
+  max_length: 256
+  save_dir: /diskthalys/ssd14ta/kmunaoka/Research/unlearn-relearn-reversibility/workdir/finetune
+
 unlearning:
   method: eu
   lr: 5.0e-5

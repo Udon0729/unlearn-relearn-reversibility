@@ -1,0 +1,6 @@
+{
+  "loss_mode": "nll",
+  "forget_mean_loss": 3.376953125,
+  "test_mean_loss": 1.0133056640625,
+  "ratio": 3.3326105288519456
+}

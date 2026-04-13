@@ -3,7 +3,7 @@ requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
-name = "llada-unlearn-relearn"
+name = "unlearn-relearn-reversibility"
 version = "0.1.0"
 description = "Fact-level unlearning and relearning reversibility in masked diffusion and autoregressive language models"
 readme = "README.md"
@@ -64,11 +64,11 @@ quantize = [
 ]
 
 [project.urls]
-Repository = "https://github.com/Udon0729/llada-unlearn-relearn"
-Issues = "https://github.com/Udon0729/llada-unlearn-relearn/issues"
+Repository = "https://github.com/Udon0729/unlearn-relearn-reversibility"
+Issues = "https://github.com/Udon0729/unlearn-relearn-reversibility/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/llada_unlearn"]
+packages = ["src/unlearn_relearn"]
 
 [tool.ruff]
 line-length = 100
