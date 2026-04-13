@@ -1,15 +1,0 @@
-The model weights are not tied. Please use the `tie_weights` method before using the `infer_auto_device` function.
-1. Loading model...
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:00,  5.56it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:00,  5.62it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:00<00:00,  4.29it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:00<00:00,  4.22it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  4.32it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  4.91it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  4.72it/s]
-Some parameters are on the meta device because they were offloaded to the cpu.
-   Done. device=cuda:0
-2. Loading benchmark...
-   Done. forget=40
-3. Testing single forward on forget batch...
-   input shape=torch.Size([1, 512])
-   loss=0.0752
-4. Testing evaluate_all...
-   forget_quality={'loss': 0.3494068000152765, 'perplexity': np.float64(1.4182260073709074)}
-   model_utility={'loss': 0.11844795027586201, 'perplexity': np.float64(1.1257482776897325)}
-   mia={'auc': 0.19649999999999998, 'member_mean_loss': np.float64(0.49833827610927983), 'non_member_mean_loss': np.float64(0.15682375894629635)}
-ALL OK

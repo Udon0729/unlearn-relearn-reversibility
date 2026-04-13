@@ -1,24 +1,0 @@
-1. Loading model...
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.59it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  2.31it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.71it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  3.08it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  3.41it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.93it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.17it/s]
-   device=cuda:0, mem=16.0GB
-2. Loading benchmark...
-   forget=40, retain=3960
-3. Single forward...
-   loss=0.2059, masked=329/512
-4. evaluate_all...
-{
-  "forget_quality": {
-    "loss": 0.46353410254814664,
-    "perplexity": 1.5896821690128906
-  },
-  "model_utility": {
-    "loss": 0.09863909011978521,
-    "perplexity": 1.103667903019907
-  },
-  "mia": {
-    "auc": 0.181,
-    "member_mean_loss": 0.44781045183392365,
-    "non_member_mean_loss": 0.1025079058980787
-  }
-}
-DONE

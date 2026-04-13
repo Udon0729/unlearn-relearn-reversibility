@@ -1,93 +1,0 @@
-Config: llada-8b-instruct, eu, elbo, steps=10
-Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:00<00:03,  1.57it/s]Loading checkpoint shards:  33%|███▎      | 2/6 [00:00<00:01,  2.45it/s]Loading checkpoint shards:  50%|█████     | 3/6 [00:01<00:01,  2.89it/s]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:01<00:00,  3.16it/s]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:01<00:00,  3.41it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.89it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:01<00:00,  3.21it/s]
-Unlearning:   0%|          | 0/10 [00:00<?, ?it/s]Unlearning:  10%|█         | 1/10 [00:00<00:04,  1.82it/s]Unlearning:  20%|██        | 2/10 [00:01<00:04,  1.93it/s]Unlearning:  30%|███       | 3/10 [00:01<00:03,  1.96it/s]Unlearning:  40%|████      | 4/10 [00:02<00:03,  1.98it/s]Unlearning:  50%|█████     | 5/10 [00:02<00:02,  1.99it/s]Unlearning:  60%|██████    | 6/10 [00:03<00:02,  1.99it/s]Unlearning:  70%|███████   | 7/10 [00:03<00:01,  1.99it/s]Unlearning:  80%|████████  | 8/10 [00:04<00:01,  1.99it/s]Unlearning:  90%|█████████ | 9/10 [00:04<00:00,  1.99it/s]Unlearning: 100%|██████████| 10/10 [00:05<00:00,  2.00it/s]Unlearning: 100%|██████████| 10/10 [00:05<00:00,  1.98it/s]
-{
-  "config": {
-    "model": "llada-8b-instruct",
-    "method": "eu",
-    "loss_mode": "elbo",
-    "benchmark": "tofu",
-    "steps": 10
-  },
-  "pre_unlearn": {
-    "forget_quality": {
-      "loss": 0.44982120330773084,
-      "perplexity": 1.5680318015255674
-    },
-    "model_utility": {
-      "loss": 0.1398677402871443,
-      "perplexity": 1.1501216740350995
-    },
-    "mia": {
-      "auc": 0.14600000000000002,
-      "member_mean_loss": 0.4255350119434297,
-      "non_member_mean_loss": 0.09494914270599139
-    }
-  },
-  "post_unlearn": {
-    "forget_quality": {
-      "loss": 2.9646107889711857,
-      "perplexity": 19.387156077884114
-    },
-    "model_utility": {
-      "loss": 0.798377316147089,
-      "perplexity": 2.2219325076187317
-    },
-    "mia": {
-      "auc": 0.03750000000000002,
-      "member_mean_loss": 4.085357636213303,
-      "non_member_mean_loss": 0.8686424829810858
-    }
-  },
-  "unlearn_log": [
-    {
-      "step": 0,
-      "loss": 29.52620506286621
-    },
-    {
-      "step": 1,
-      "loss": 7.103971004486084
-    },
-    {
-      "step": 2,
-      "loss": 6.857922077178955
-    },
-    {
-      "step": 3,
-      "loss": 7.886099338531494
-    },
-    {
-      "step": 4,
-      "loss": 2.5453989505767822
-    },
-    {
-      "step": 5,
-      "loss": 5.023148059844971
-    },
-    {
-      "step": 6,
-      "loss": 9.947479248046875
-    },
-    {
-      "step": 7,
-      "loss": 3.367053985595703
-    },
-    {
-      "step": 8,
-      "loss": 5.3070597648620605
-    },
-    {
-      "step": 9,
-      "loss": 3.7919211387634277
-    }
-  ],
-  "benchmark_metadata": {
-    "benchmark": "tofu",
-    "forget_split": "forget01",
-    "retain_split": "retain99",
-    "forget_size": 40,
-    "retain_size": 3960,
-    "test_size": 100
-  }
-}
-E2E DONE
